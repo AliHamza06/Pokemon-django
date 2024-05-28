@@ -1,0 +1,1534 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0C1C3E;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.navMain {
+    background-color: #0C1C3E;
+    padding: 7px 50px;
+    border-bottom: 2px solid #FFCB05;
+}
+
+.navbarBrand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbarBrand img {
+    width: auto;
+    height: 68px;
+}
+
+.navLink {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF !important;
+    padding: 5px 0 !important;
+    position: relative;
+    /* Ensures pseudo-element is positioned correctly */
+    text-transform: uppercase;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Positions the border directly at the bottom of the link */
+    width: 100%;
+    height: 2px;
+    background-color: #FFCB05;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navUl {
+    gap: 40px;
+}
+
+.language-selector {
+    position: relative;
+    /* width: 200px; */
+}
+
+.language-dropdown {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    width: 160px;
+    /* max-width: 160px; */
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #24CBAA;
+    appearance: none;
+    -webkit-appearance: none;
+    /* for Safari */
+    -moz-appearance: none;
+    /* for Firefox */
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+    background-color: #0C1C3E;
+    color: #FFFFFF;
+}
+
+.language-dropdown:focus {
+    border-color: #FFCB05;
+    outline: none;
+}
+
+
+/* Remove arrow for Firefox */
+.language-dropdown::-ms-expand {
+    display: none;
+}
+
+.manageWidth {
+    padding: 0 50px;
+}
+
+.homeOneImgDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.homeOneImg {
+    width: 100%;
+
+}
+
+.homeTitleDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeTitleDiv img {
+    width: 100%;
+}
+
+.playContent {
+    position: absolute;
+}
+
+.playContent h5 {
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #FFCB05;
+    -webkit-text-stroke: 3px #0C1C3E;
+}
+
+.playContent p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    color: #0C1C3E;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.homeTitleMain {
+    position: absolute;
+}
+
+.navbar-toggler {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler-icon i {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+.discoverSec {
+    background-image: url(../images/Container.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 0 0;
+}
+
+.discoverContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.discoverContent h2 {
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 52px;
+    color: #0C1C3E;
+    margin-bottom: 0;
+}
+
+.discoverContent p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #073849;
+    margin-bottom: 0;
+}
+
+.whitePaperBtn {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: center;
+    padding: 9.6px 25.6px;
+    border-radius: 999px;
+    color: #0061AF;
+    border: 1px solid #0061AF;
+    text-decoration: none;
+    width: max-content;
+    margin-top: 1rem;
+    transition: all 200ms ease-in-out;
+}
+
+.whitePaperBtn:hover {
+    background-color: #0C1C3E;
+    color: #FFFFFF;
+}
+
+.pikasoImg {
+    width: 100%;
+    height: 100%;
+}
+
+.pikasoImgCol {
+    display: flex;
+    align-items: end;
+}
+
+.addPPCMain {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.addPPCMain img {
+    width: 100%;
+}
+
+.addPPCContentOne {
+    position: absolute;
+    width: 100%;
+}
+
+.ppCTitle {
+    display: flex;
+    gap: 25px;
+}
+
+.ppCTitle img {
+    width: auto;
+    height: 80px;
+}
+
+.ppCTitle h3 {
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+/* .addPPCContentTwo{
+    width: 50%;
+}
+.addPPCContentOne img{
+    width: 100%;
+    height: 550px;
+} */
+/* .addPPCContentTwo img{
+    width: 100%;
+    height: 550px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 22% 100%);
+} */
+.addressSec {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 45px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #0C1C3E;
+    padding: 10px 15px;
+    margin-top: 1rem;
+}
+
+.recTangImgTwo {
+    display: none;
+}
+
+.tokenmicesSection {
+    background-image: url(../images/Container2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0 40px 0;
+    background-size: cover;
+}
+
+.tokenMicesContent h2 {
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+    color: #18242E;
+    margin-bottom: 2rem;
+}
+
+.tokenMicesContent h6 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    color: #0061AF;
+}
+
+.tokenImg {
+    margin: 0 auto
+}
+
+.tokenMicesContent h6 span {
+    font-weight: 900;
+}
+
+.tokenMicesContent {
+    margin-bottom: 2rem;
+}
+
+.downloadTodaySec {
+    background-color: #173F7B;
+    padding: 30px 10px;
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadTodayContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.playImg {
+    width: auto;
+    height: 180px;
+}
+
+.downloadTodayContentOne {
+    width: 100%;
+    max-width: 500px;
+}
+
+.downloadTodayContentOne h1 {
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    padding: 30px 0 10px 0;
+}
+
+.hrefFooter a {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #18242E;
+}
+
+.hrefFooter a p {
+    margin-bottom: 10px;
+}
+
+.joinUsSec h1 {
+    margin-bottom: 0;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 16.8px;
+
+    color: #0C1C3E;
+    text-align: center;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.socialIcons img {
+    transition: all 300ms ease-in-out;
+}
+
+.socialIcons img:hover {
+    transform: scale(1.06);
+}
+
+.footerDesc {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: center;
+    color: #18242E;
+
+}
+
+.footerColImg {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.pokImg {
+    width: auto;
+    height: 21px;
+}
+
+.facSection {
+    background-image: url(../images/Frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 60px 0;
+}
+
+.facSection h3 {
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+    color: #0C1C3E;
+
+}
+
+.accordionButton {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19.2px;
+    text-align: left;
+    color: #FFFFFF !important;
+    border-radius: 12px !important;
+    background-color: #0C1C3E !important;
+    padding: 24px 30px;
+    --bs-accordion-btn-icon-width: 1rem;
+}
+
+.accordion-item {
+    border: none;
+    background: none;
+    margin-top: 8px;
+}
+
+.accordionButton:focus {
+    background-color: #0C1C3E !important;
+    box-shadow: none;
+}
+
+.accordion-header {
+    background-color: #0C1C3E !important;
+    border-radius: 12px;
+}
+
+.accordion-body {
+    background-color: #0F224A;
+    border-radius: 0px 0px 12px 12px;
+    padding: 15px 30px;
+}
+
+.accordion-button:not(.collapsed) {
+    border-radius: 12px 12px 0px 0px !important;
+}
+
+:root {
+    --bs-border-width: 0px !important;
+
+}
+
+.accordion-body p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/Polygon.svg);
+}
+
+.accordion-button::after {
+    background-image: url(../images/Polygon.svg);
+}
+
+.secuirtySection {
+    background-image: url(../images/mini.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    background-position: right;
+}
+
+.securityConetnt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.securityConetnt h4 {
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 900;
+    text-align: left;
+    color: #0C1C3E;
+    margin-bottom: 1rem;
+}
+
+.securityConetnt p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #073849;
+    margin-bottom: 0;
+}
+
+.RoadSection {
+    background-image: url(../images/ContainerRoad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    background-position: right;
+}
+
+.RoadConetnt h4 {
+    color: #fff;
+}
+
+.RoadConetnt p {
+    color: #fff;
+}
+
+/* .leaderBoardMainSec{
+    
+} */
+/* .leaderBoardMainSec {
+    background: linear-gradient(180deg, rgba(35, 66, 117, 0) 0%, #234275 90%);
+} */
+/* .leaderBoardMainSec img{
+    width: 100%;
+} */
+.leaderBoardMainSec {
+    background-image: url(../images/lead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 15px 2rem 15px;
+    /* height: 300vh; */
+}
+
+.leadrBoard {
+    background: #0C1C3ECC;
+    width: 100%;
+    max-width: 684px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+
+/* .leadeSectionOne {
+    height: 100vh;
+    background-color: #224274;
+    margin-top: -5px;
+} */
+
+.whitePaperMainSec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.whitePaperMainSec img {
+    width: 100%;
+}
+
+.whitePaperContent {
+    margin-top: -37px;
+    background-color: #0A0A0A;
+    padding: 50px 0 50px 0;
+}
+
+.whitePaperTopCont {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+}
+
+.whitePaperTopCont img {
+    width: auto;
+    height: 160px;
+}
+
+.whitePaperTopCont h6 {
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFCB05;
+    -webkit-text-stroke: 3px #0C1C3E;
+    margin-top: 1.5rem;
+}
+
+.whitePaperTitle {
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 900 !important;
+    line-height: 38.4px;
+    text-align: center;
+    -webkit-text-stroke: 3px #2F6DB4;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.whitePaperDesc p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.16px;
+    text-align: justified;
+    color: #FFFFFF;
+    margin-bottom: 1.8rem;
+}
+
+.manageTop {
+    margin-top: 5rem;
+}
+
+.roadMapCard {
+    background: #0C1C3ECC;
+    height: auto;
+    min-height: 292px;
+    border-radius: 27px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.roadMapCard p {
+    margin-bottom: 0;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.12px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.yearImg {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.leadBoradHeadr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.leadBoradHeadr img {
+    width: auto;
+    height: 36px;
+}
+
+.leadBoradHeadr h5 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.leadBoradHeadr h6 {
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.leadBoradHeadr p {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #FFFFFF80;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.leadBoradHeadr p img {
+    width: auto;
+    height: 16px !important;
+}
+
+.tabSec {
+    background-color: #31445A;
+    padding: 20px 20px;
+    margin-top: 1.5rem;
+}
+
+.searchInput {
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    padding: 8px 15px 8px 43px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    color: #0A0A0A;
+}
+
+.serchIcon {
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+}
+
+.leadRowSec {
+    background-color: #1D2837;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-top: 1rem;
+}
+
+.numberCol h1 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.comapnyContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.comapnyContent h5 {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.leaderBoardData{
+   padding: 2rem 0;
+}
+.leaderBoardData h4{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-align: center;
+}
+.comapnyContent p {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.comapnyContent img {
+    width: auto;
+    height: 35px;
+}
+
+.numberCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comapnyContentTotal {
+    justify-content: end;
+}
+
+.comapnyContentTotal h5 {
+    text-align: end;
+}
+
+.comapnyContentTotal p {
+    text-align: end;
+}
+
+
+#pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+#pagination li {
+    display: inline
+}
+
+#pagination li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000;
+   
+}
+
+/* Active and Hoverable Pagination */
+#pagination li a {
+    border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s
+}
+
+#pagination li a.active {
+    background-color: #FFFFFF;
+    color: #1D2837
+}
+
+#pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* border-pagination */
+.b-pagination-outer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: flex
+}
+
+#border-pagination {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    gap: 7px;
+}
+
+#border-pagination li {
+    display: inline;
+
+}
+
+#border-pagination li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    float: left;
+    background-color: #1D2837;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+
+}
+
+#border-pagination li a {
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s
+}
+
+#border-pagination li a.active {
+    background-color: #FFFFFF;
+    color: #1D2837 ;
+}
+
+#border-pagination li a:hover:not(.active) {
+    background: #ddd;
+    color: #1D2837;
+}
+
+@media (max-width : 1400px) {
+    .leadrBoard {
+        max-width: 650px;
+    }
+    .whitePaperTopCont img {
+        height: 140px;
+    }
+
+    .whitePaperTopCont h6 {
+        font-size: 60px;
+        margin-top: 1rem;
+    }
+
+    .roadMapCard p {
+        font-size: 15px;
+    }
+
+    .roadMapCard {
+        min-height: 273px;
+        padding: 25px 20px;
+        gap: 18px;
+    }
+
+    .yearImg {
+        max-width: 900px;
+    }
+
+    .manageTop {
+        margin-top: 4rem;
+    }
+
+    .tokenmicesSection {
+        background-size: auto;
+    }
+
+    .securityConetnt {
+        gap: 25px;
+    }
+
+    .facSection {
+        padding: 40px 0 50px 0;
+    }
+
+    .playImg {
+        height: 174px;
+    }
+
+    .playContent h5 {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+
+    .playContent p {
+        font-size: 22px;
+    }
+
+    .tokenmicesSection {
+        padding: 40px 0 40px 0;
+    }
+
+    .facSection h3 {
+        font-size: 34px;
+    }
+
+    .tokenMicesContent h2 {
+        font-size: 34px;
+        margin-bottom: .7rem;
+    }
+
+    .tokenMicesContent h6 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .securityConetnt h4 {
+        font-size: 34px;
+    }
+
+    .securityConetnt p {
+        font-size: 14px;
+    }
+
+    .secuirtySection {
+        padding: 50px 0;
+    }
+
+    .discoverContent p {
+        font-size: 14px;
+    }
+
+    .discoverContent h2 {
+        font-size: 33px;
+    }
+
+    .whitePaperBtn {
+        font-size: 16px;
+        padding: 8.6px 25.6px;
+    }
+
+    .discoverContent {
+        gap: 15px;
+    }
+}
+
+@media (max-width : 1200px) {
+    .roadMapCard p {
+        font-size: 14px;
+        line-height: 20.12px;
+    }
+
+    .roadMapCard {
+        min-height: 286px;
+        padding: 20px 20px;
+        gap: 15px;
+    }
+
+    .navUl {
+        gap: 25px;
+    }
+
+    .language-dropdown {
+        font-size: 14px;
+        width: 139px;
+        padding: 5px 14px;
+        background-size: 12px;
+    }
+
+    .navLink {
+        font-size: 13px;
+    }
+
+    .playContent h5 {
+        font-size: 50px;
+    }
+
+    .playContent p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 992px) {
+    .roadMapCard {
+        min-height: 247px;
+        padding: 20px 20px;
+        gap: 15px;
+    }
+
+    .whitePaperTopCont img {
+        height: 120px;
+    }
+
+    .whitePaperTitle {
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .whitePaperTopCont h6 {
+        font-size: 46px;
+        margin-top: 1rem;
+    }
+
+    .whitePaperDesc p {
+        font-size: 14px;
+        margin-bottom: 1.2rem;
+    }
+
+    .manageWidth {
+        padding: 0 40px;
+    }
+
+    .manageTop {
+        margin-top: 3rem;
+    }
+
+    .navMain {
+        padding: 8px 40px;
+    }
+
+    .playImg {
+        height: 150px;
+    }
+
+    .downloadTodayContentOne h1 {
+        font-family: 'Lato';
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .navUl {
+        gap: 30px;
+        align-items: center;
+        padding: 30px 0;
+        margin-bottom: 0 !important;
+    }
+
+    .language-selector {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+    }
+
+    .downloadTodayContent {
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 768px) {
+    #border-pagination {
+        gap: 7px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .leadrBoard {
+        padding: 20px 35px;
+    }
+
+    .whitePaperTopCont img {
+        height: 100px;
+    }
+
+    .whitePaperTopCont {
+        top: 40px;
+    }
+
+    .secuirtySection {
+        background-position: left;
+    }
+
+    .RoadSection {
+        background-position: left;
+    }
+
+    .playContent h5 {
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
+
+    .recTangImgOne {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .playContent p {
+        font-size: 16px;
+    }
+
+    .navMain {
+        padding: 10px 30px;
+    }
+
+    .manageWidth {
+        padding: 0 30px;
+    }
+
+    .tokenmicesSection {
+        background-size: auto;
+    }
+
+    .appDiv {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .tokenmicesSection {
+        padding: 40px 10px 40px 10px;
+    }
+
+    .tokenImg {
+        width: 100%;
+    }
+
+    .rowReverse {
+        flex-direction: column-reverse;
+    }
+
+    .hrefFooter a p {
+        text-align: center;
+    }
+
+    .joinUsSec {
+        margin-top: 2rem;
+    }
+
+    .footerColImg {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hrefFooter {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .footerDesc {
+        font-size: 16px;
+    }
+    .tabSec {
+        padding: 18px 15px;
+        margin-top: 1rem;
+    }
+    .leadBoradHeadr h5 {
+        line-height: 26.6px;
+        text-align: center;
+    }
+
+    .serchIcon {
+        left: 10px;
+    }
+
+    .searchInput {
+        padding: 8px 10px 8px 37px;
+        font-size: 15px;
+    }
+
+    .leadBoradHeadr h6 {
+        font-size: 14px;
+    }
+
+    .leadrBoard {
+        padding: 20px 20px;
+    }
+
+    .leadRowSec {
+        padding: 30px 20px;
+    }
+
+    .comapnyContent {
+        justify-content: center;
+        margin-top: 1.5rem;
+        flex-direction: column;
+    }
+
+    .comapnyContent h5 {
+        text-align: center;
+    }
+
+    .comapnyContent p {
+        text-align: center;
+    }
+
+    .comapnyContentTotal h5 {
+        text-align: center;
+    }
+
+    .comapnyContentTotal p {
+        text-align: center;
+    }
+
+    .whitePaperTopCont img {
+        height: 73px;
+    }
+
+    .manageTop {
+        margin-top: 2rem;
+    }
+
+    .whitePaperDesc p {
+        line-height: 21.16px;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    .whitePaperTopCont {
+        top: 14px;
+    }
+
+    .whitePaperTopCont h6 {
+        font-size: 36px;
+        margin-top: 1rem;
+        -webkit-text-stroke: 2px #0C1C3E;
+    }
+
+    .roadMapCard {
+        min-height: auto;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .whitePaperTopCont {
+        top: 20px;
+    }
+
+    .whitePaperTitle {
+        font-size: 26px;
+        margin-bottom: 1.5rem;
+        -webkit-text-stroke: 2px #2F6DB4;
+    }
+
+    .navUl {
+        gap: 20px;
+    }
+
+    .navbarBrand img {
+        height: 57px;
+    }
+
+    .navbar-toggler-icon i {
+        font-size: 30px;
+    }
+
+    .addressSec {
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .tokenMicesContent h2 {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .accordionButton {
+        font-size: 14px;
+        padding: 16px 15px;
+        --bs-accordion-btn-icon-width: .8rem;
+        gap: 5px;
+    }
+
+    .tokenMicesContent h6 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .secuirtySection {
+        background-position: left;
+        padding: 30px 0;
+    }
+
+    .facSection {
+        padding: 30px 0 40px 0;
+    }
+
+    .tokenmicesSection {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .downloadTodayContentOne h1 {
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+    }
+
+    .accordion-body {
+        padding: 15px 15px;
+    }
+
+    .accordion-body p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .securityConetnt {
+        gap: 15px;
+    }
+
+    .facSection h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .RoadSection {
+        background-position: left;
+        padding: 30px 0;
+    }
+
+    .securityConetnt h4 {
+        line-height: 39px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .securityConetnt p {
+        text-align: center;
+    }
+
+    .discoverContent h2 {
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .whitePaperBtn {
+        font-size: 15px;
+        padding: 7.6px 21.6px;
+    }
+
+    .addressSec {
+        max-width: 317px;
+        padding: 12px 22px;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+
+    .navMain {
+        padding: 5px 0;
+        border-bottom: 1px solid #FFCB05;
+    }
+
+    .manageWidth {
+        padding: 0 0px;
+    }
+
+    .playContent h5 {
+        font-size: 37px;
+        letter-spacing: 5px;
+        -webkit-text-stroke: 2px #0C1C3E;
+    }
+
+    .playContent p {
+        font-size: 16px;
+    }
+
+    .discoverSec {
+        padding: 20px 0 0 0;
+    }
+
+    .addPPCContentOne {
+        padding: 0 10px;
+    }
+
+    .addPPCMain {
+        justify-content: center;
+    }
+
+    .ppCTitle h3 {
+        font-size: 26px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .ppCTitle img {
+        height: 84px;
+    }
+
+    .ppCTitle {
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recTangImgOne {
+        display: none;
+    }
+
+    .recTangImgTwo {
+        display: block;
+    }
+
+    .recTangImgTwo {
+        height: 330px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width : 450px) {
+    .whitePaperTitle {
+        font-size: 22px;
+        margin-bottom: 1rem;
+        -webkit-text-stroke: 1px #2F6DB4;
+    }
+
+    .whitePaperTopCont img {
+        height: 52px;
+    }
+
+    .whitePaperTopCont h6 {
+        font-size: 27px;
+        margin-top: .5rem;
+        -webkit-text-stroke: 1px #0C1C3E;
+    }
+
+    .homeOneImg {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .playContent h5 {
+        font-size: 33px;
+        letter-spacing: 3px;
+    }
+
+    .playContent p {
+        font-size: 14px;
+    }
+
+    .homeTitleMain {
+        top: 30px;
+    }
+
+
+}

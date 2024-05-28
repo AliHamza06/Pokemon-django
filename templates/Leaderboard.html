@@ -1,0 +1,49 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- home section three -->
+<div class="container-fluid manageWidth">
+    <div class="leaderBoardMainSec">
+        <!-- <img src="{% static '/assets/images/leadePageBackground.png' %}" alt=""> -->
+        <div class="leadeSectionOne">
+            <div class="leadrBoard">
+                <div class="leadBoradHeadr">
+                    <img src="{% static '/assets/images/leadLogo.svg' %}" alt="">
+                    <h5>POKEMON PLAY LEADERBOARD</h5>
+                    <h6>Rankings | World of Wonders</h6>
+                    <p>
+                        Last updated: 6 minutes ago
+                        <img src="{% static '/assets/images/Border.svg' %}" alt="">
+                    </p>
+                </div>
+                <div class="tabSec">
+                    <div class="b-pagination-outer">
+                        <ul id="border-pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="position-relative d-flex align-items-center">
+                    <input type="text" class="form-control searchInput" name="" id="">
+                    <img src="{% static '/assets/images/search-24px.svg fill.svg' %}" alt="" class="serchIcon">
+                </div>
+                <div class="leaderBoardData">
+                    <h4>Data is not available</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

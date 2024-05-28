@@ -1,0 +1,49 @@
+{% load static %}
+<div class="container-fluid manageWidth">
+    <!-- footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row rowReverse mb-sm-5 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="hrefFooter">
+                        <a href="{% url 'leader-board' %}">
+                            <p>LEADERBOARD</p>
+                        </a>
+                        <a href="{% url 'white-paper' %}">
+                            <p>
+                                WHITEPAPER
+                            </p>
+                        </a>
+                        <a href="{% url 'home' %}#tokenSec">
+                            <p>TOKENOMICS</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="joinUsSec">
+                        <h1>JOIN US NOW!</h1>
+                        <div class="socialIcons">
+                            <a href="#">
+                                <img src="{% static '/assets/images/Button - Instagram.svg' %}" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="{% static '/assets/images/Button - Facebook.svg' %}" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="{% static '/assets/images/Button - YouTube.svg' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 footerColImg">
+                    <img class="pokImg"
+                        src="{% static '/assets/images/weQ9C0BfxjscsYyp09sM-GOBwuNTtbfveFBNceI8Q5NNTS7YRdXhTeDY5Rl8mubaPkzjj6rE3pWcFnY6NLeMr1Cyh6cYseavTvbpFD04PBGt=rw-e365-w1800.svg' %}" alt="">
+                    <img src="{% static '/assets/images/Link.svg' %}" alt="">
+                </div>
+            </div>
+            <p class="footerDesc mb-0">
+                © 2024 Pokemonplay.io. All rights reserved
+            </p>
+        </div>
+    </footer>
+</div>
